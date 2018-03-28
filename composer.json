@@ -12,10 +12,10 @@
     "autoload": {
         "files":[],
         "psr-4": {
-            "wechat\\config": "config",
-            "wechat\\auth": "src/auth",
-            "wechat\\pay": "src/pay",
-            "wechat\\wxpublic": "src/public"
+            "wechat\\config\\": "config",
+            "wechat\\auth\\": "src/auth",
+            "wechat\\pay\\": "src/pay",
+            "wechat\\wxpublic\\": "src/public"
         }
     },
     "require": {
