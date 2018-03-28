@@ -18,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
-              <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+              <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -149,11 +149,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522220670919</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="依赖不稳定问题">
+      <created>1522224753485</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1522224753485</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4719000" />
+    <option name="totallyTimeSpent" value="4914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="501" width="1382" height="754" extended-state="6" />
@@ -190,7 +197,8 @@
     <MESSAGE value="初始化项目" />
     <MESSAGE value="文档编写" />
     <MESSAGE value="composer.json规范" />
-    <option name="LAST_COMMIT_MESSAGE" value="composer.json规范" />
+    <MESSAGE value="依赖不稳定问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="依赖不稳定问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -219,7 +227,7 @@
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="22" column="27" lean-forward="false" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
           <folding />
         </state>
       </provider>

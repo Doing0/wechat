@@ -19,7 +19,7 @@
         }
     },
     "require": {
-        "doing/extp": "@dev",
-        "doing/tool": "@dev"
+        "doing/extp": "",
+        "doing/tool": ""
     }
 }
