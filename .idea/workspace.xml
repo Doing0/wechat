@@ -4,8 +4,6 @@
     <list default="true" id="bd6e9434-551d-4a98-9238-5f069d765937" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auth/WxAuth.php" afterPath="$PROJECT_DIR$/src/auth/WxAuth.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/config/wechatConfig.php" afterPath="$PROJECT_DIR$/config/WechatConfig.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +17,8 @@
       <file leaf-file-name="WxAuth.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/auth/WxAuth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="119" column="13" lean-forward="true" selection-start-line="119" selection-start-column="13" selection-end-line="119" selection-end-column="13" />
+            <state relative-caret-position="2664">
+              <caret line="125" column="30" lean-forward="false" selection-start-line="125" selection-start-column="30" selection-end-line="125" selection-end-column="30" />
               <folding>
                 <element signature="e#148#178#0#PHP" expanded="true" />
                 <element signature="e#3314#3942#0#PHP" expanded="true" />
@@ -195,11 +193,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522228080814</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="修改命名空间,修改读取配置文件,修改文档">
+      <created>1522229099859</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1522229099859</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7891000" />
+    <option name="totallyTimeSpent" value="8216000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="501" width="1382" height="754" extended-state="6" />
@@ -239,7 +244,8 @@
     <MESSAGE value="依赖不稳定问题" />
     <MESSAGE value="依赖不稳定问题发布1.0.0" />
     <MESSAGE value="版本号文档" />
-    <option name="LAST_COMMIT_MESSAGE" value="版本号文档" />
+    <MESSAGE value="修改命名空间,修改读取配置文件,修改文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改命名空间,修改读取配置文件,修改文档" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -260,17 +266,17 @@
           <first_editor relative-caret-position="370">
             <caret line="8" column="79" lean-forward="false" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
             <folding>
-              <marker date="1522228767508" expanded="true" signature="1245:1357" ph="//..." />
-              <marker date="1522228767508" expanded="true" signature="1412:1513" ph="//..." />
-              <marker date="1522228767508" expanded="true" signature="1666:3183" ph="{&quot;type&quot;: 'GET'...}" />
-              <marker date="1522228767508" expanded="true" signature="1802:3104" ph="{...}" />
-              <marker date="1522228767508" expanded="true" signature="1826:2325" ph="{&quot;appId&quot;: res.appId...}" />
-              <marker date="1522228767508" expanded="true" signature="2175:2293" ph="[...]" />
-              <marker date="1522228767508" expanded="true" signature="2361:3092" ph="{...}" />
-              <marker date="1522228767508" expanded="true" signature="2425:2874" ph="{&quot;title&quot;: title...}" />
-              <marker date="1522228767508" expanded="true" signature="2770:2813" ph="{...}" />
-              <marker date="1522228767508" expanded="true" signature="2929:3076" ph="{&quot;title&quot;: title...}" />
-              <marker date="1522228767508" expanded="true" signature="3136:3177" ph="{...}" />
+              <marker date="1522229363000" expanded="true" signature="1255:1367" ph="//..." />
+              <marker date="1522229363000" expanded="true" signature="1422:1523" ph="//..." />
+              <marker date="1522229363000" expanded="true" signature="1676:3193" ph="{&quot;type&quot;: 'GET'...}" />
+              <marker date="1522229363000" expanded="true" signature="1812:3114" ph="{...}" />
+              <marker date="1522229363000" expanded="true" signature="1836:2335" ph="{&quot;appId&quot;: res.appId...}" />
+              <marker date="1522229363000" expanded="true" signature="2185:2303" ph="[...]" />
+              <marker date="1522229363000" expanded="true" signature="2371:3102" ph="{...}" />
+              <marker date="1522229363000" expanded="true" signature="2435:2884" ph="{&quot;title&quot;: title...}" />
+              <marker date="1522229363000" expanded="true" signature="2780:2823" ph="{...}" />
+              <marker date="1522229363000" expanded="true" signature="2939:3086" ph="{&quot;title&quot;: title...}" />
+              <marker date="1522229363000" expanded="true" signature="3146:3187" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />
@@ -289,8 +295,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/auth/WxAuth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="119" column="13" lean-forward="true" selection-start-line="119" selection-start-column="13" selection-end-line="119" selection-end-column="13" />
+        <state relative-caret-position="2664">
+          <caret line="125" column="30" lean-forward="false" selection-start-line="125" selection-start-column="30" selection-end-line="125" selection-end-column="30" />
           <folding>
             <element signature="e#148#178#0#PHP" expanded="true" />
             <element signature="e#3314#3942#0#PHP" expanded="true" />
