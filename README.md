@@ -28,7 +28,10 @@ public function info()
   $fullurl = urldecode(input('fullurl'));
   #获取权限信息(直接调用包内方法即可)：
   //类的顶上一定保证use wechat\auth\WxAuth;
-  return WxAuth::instance()->getInfo($fullurl);
+  //返回json格式格式
+  return json_encode($WxAuth::instance()->getInfo($fullurl));
+  //如果是TP5框架可以写成
+   return json($WxAuth::instance()->getInfo($fullurl));
 }//pf
 ```
 返回的数据格式如下(满足客户端调用微信jssdk时需要的数据结构)
