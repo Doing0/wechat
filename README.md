@@ -6,7 +6,7 @@ style: summer
 > 1. 此composer包主要是集成关于微信的一些常用开发如：`微信公众号二次开发`，`微信支付`，`微信手机web的分享`等。由于包含众多功能现只上传了`微信手机web的分享`。后期会持续跟进和更新。
 > 2. 您在用此包时已默认您已会并成功配置了相关公众号信息且会使用composer
 > 3. 安装命令`composer require doing/wechat 版本号`
-> 4. 此包只能集成于于ThinkPHP5里面：原因是使用了它的缓存和异常机制，如果想使用于其他框架也很简单，只需要把缓存和异常机制做一个简单的更换处理即可
+> 4. 此包只能集成于ThinkPHP5里面：原因是使用了它的缓存机制，如果想使用于其他框架也很简单，只需要把缓存做一个更换处理即可(主要是编程思想)
 
 ## 微信手机web分享(发送给朋友，朋友圈等)
 ### 配置公众号
@@ -23,15 +23,21 @@ style: summer
 ```
 public function info()
 {
-  #获取转义的ur并反转义
-  //客户端传递过来的参数fullurl一定是要通过js的encodeURIComponent转义了的
-  $fullurl = urldecode(input('fullurl'));
-  #获取权限信息(直接调用包内方法即可)：
-  //类的顶上一定保证use wechat\auth\WxAuth;
-  //返回json格式格式
-  return json_encode($WxAuth::instance()->getInfo($fullurl));
-  //如果是TP5框架可以写成
-   return json($WxAuth::instance()->getInfo($fullurl));
+     try
+     {
+         #获取转义的ur并反转义
+         //客户端传递过来的参数fullurl一定是要通过js的encodeURIComponent转义了的
+         $fullurl = urldecode(input('fullurl'));
+         #获取权限信息(直接调用包内方法即可)：
+         //类的顶上一定保证use wechat\auth\WxAuth;
+         return WxAuth::instance()->getInfo($fullurl);
+     }
+     catch (\Exception $e)
+     {
+        //json方法是Tp5框架的,第一个参数是错误信息,第二个参数是http的状态码
+        //客户端接受异常如果是ajax请求就应该在error的回掉函数里获取
+         return json($e->getMessage(),600);
+     }//-try
 }//pf
 ```
 返回的数据格式如下(满足客户端调用微信jssdk时需要的数据结构)

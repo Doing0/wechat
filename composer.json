@@ -19,7 +19,6 @@
         }
     },
     "require": {
-        "doing/extp": "1.0.*",
         "doing/tool": "1.0.*"
     }
 }

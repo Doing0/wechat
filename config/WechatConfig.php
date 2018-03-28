@@ -17,7 +17,7 @@ class WechatConfig {
     //获取jsapi的ticket的url
     CONST GET_JSAPI_TICKET_URL = "https://api.weixin.qq.com/cgi-bin/ticket/getticket?access_token=%s&type=jsapi";
     //access_token过期时间:7000建议不要修改
-    CONST expire_access_token = '7000';
+    CONST EXPIRE_ACCESS_TOKEN = '7000';
 }//class
 
 

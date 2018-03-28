@@ -7,7 +7,7 @@
  */
 
 namespace wechat\auth;
-use extp\diy\ServiceException;
+
 use think\Cache;
 use wechat\config\WechatConfig;
 
@@ -120,8 +120,7 @@ class WxAuth {
         #验证请求
         if (0 != $res['errcode'])
         {
-            $exp['msg'] = "微信错误码【" . $res['errcode'] . "】" . $res['errmsg'];
-            throw New ServiceException($exp);
+            throw New \Exception($this->makeWxErrorString($res));
         }
         return $res['ticket'];
     }//pf
@@ -155,13 +154,15 @@ class WxAuth {
     private function updateAccessToken()
     {
         #生成
-        $url = sprintf( WechatConfig::GET_ACCESS_TOKEN_URL, $this->appid, $this->appsecret);
+        $url = sprintf(WechatConfig::GET_ACCESS_TOKEN_URL, $this->appid, $this->appsecret);
 
         $res = json_decode(postCurl($url, 'GET'), true);
-        if(is_null($res))  throw New ServiceException(['msg'=>'请检查您的配置的appid等参数是否正确']);
+        if (is_null($res)) throw New \Exception('请检查您的配置的appid等参数是否正确');
         //微信端错误 80002生成accesstoken错误
-        if (array_key_exists('errmsg', $res)) throw New ServiceException(['msg' => "微信错误码【" . $res['errcode'] . "】" . $res['errmsg']]);
-
+        if (array_key_exists('errmsg', $res))
+        {
+            throw New \Exception($this->makeWxErrorString($res));
+        }
         #写缓存
         $access_token = $res['access_token'];
         $this->createCacheAccessToken($access_token);
@@ -178,8 +179,15 @@ class WxAuth {
     {
         $data['access_token'] = $access_token;
         $data['tm'] = time();
-        Cache::set('accessToken', $data, config('wechat_public.expire_access_token'));
+        Cache::set('accessToken', $data, WechatConfig::EXPIRE_ACCESS_TOKEN);
         return true;
+    }//pf
+
+    /** 简述:微信异常信息拼接
+     */
+    private function makeWxErrorString($res)
+    {
+        return "微信错误码【" . $res['errcode'] . "】" . $res['errmsg'];
     }//pf
 
 
