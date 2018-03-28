@@ -4,6 +4,8 @@
     <list default="true" id="bd6e9434-551d-4a98-9238-5f069d765937" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/auth/WxAuth.php" afterPath="$PROJECT_DIR$/src/auth/WxAuth.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/config/wechatConfig.php" afterPath="$PROJECT_DIR$/config/WechatConfig.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,7 +15,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="WxAuth.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/auth/WxAuth.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="119" column="13" lean-forward="true" selection-start-line="119" selection-start-column="13" selection-end-line="119" selection-end-column="13" />
+              <folding>
+                <element signature="e#148#178#0#PHP" expanded="true" />
+                <element signature="e#3314#3942#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -24,8 +40,9 @@
         <option value="$PROJECT_DIR$/wechatConfig.php" />
         <option value="$PROJECT_DIR$/config/wechatConfig.php" />
         <option value="$PROJECT_DIR$/src/sign/WxAuth.php" />
-        <option value="$PROJECT_DIR$/src/auth/WxAuth.php" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/auth/WxAuth.php" />
       </list>
     </option>
   </component>
@@ -65,6 +82,11 @@
             <path>
               <item name="wechat" type="b2602c69:ProjectViewProjectNode" />
               <item name="wechat" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="wechat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wechat" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="wechat" type="b2602c69:ProjectViewProjectNode" />
@@ -166,16 +188,24 @@
       <option name="project" value="LOCAL" />
       <updated>1522225494271</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="版本号文档">
+      <created>1522228080814</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1522228080814</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6897000" />
+    <option name="totallyTimeSpent" value="7891000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="501" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985073" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -208,37 +238,63 @@
     <MESSAGE value="composer.json规范" />
     <MESSAGE value="依赖不稳定问题" />
     <MESSAGE value="依赖不稳定问题发布1.0.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="依赖不稳定问题发布1.0.0" />
+    <MESSAGE value="版本号文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="版本号文档" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/wechatConfig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auth/WxAuth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="12" />
-          <folding>
-            <element signature="e#6#123#0#PHP" expanded="false" />
-            <element signature="e#149#179#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
           <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="370">
+            <caret line="8" column="79" lean-forward="false" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
+            <folding>
+              <marker date="1522228767508" expanded="true" signature="1245:1357" ph="//..." />
+              <marker date="1522228767508" expanded="true" signature="1412:1513" ph="//..." />
+              <marker date="1522228767508" expanded="true" signature="1666:3183" ph="{&quot;type&quot;: 'GET'...}" />
+              <marker date="1522228767508" expanded="true" signature="1802:3104" ph="{...}" />
+              <marker date="1522228767508" expanded="true" signature="1826:2325" ph="{&quot;appId&quot;: res.appId...}" />
+              <marker date="1522228767508" expanded="true" signature="2175:2293" ph="[...]" />
+              <marker date="1522228767508" expanded="true" signature="2361:3092" ph="{...}" />
+              <marker date="1522228767508" expanded="true" signature="2425:2874" ph="{&quot;title&quot;: title...}" />
+              <marker date="1522228767508" expanded="true" signature="2770:2813" ph="{...}" />
+              <marker date="1522228767508" expanded="true" signature="2929:3076" ph="{&quot;title&quot;: title...}" />
+              <marker date="1522228767508" expanded="true" signature="3136:3177" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/WechatConfig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-259">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="e#6#103#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auth/WxAuth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="119" column="13" lean-forward="true" selection-start-line="119" selection-start-column="13" selection-end-line="119" selection-end-column="13" />
+          <folding>
+            <element signature="e#148#178#0#PHP" expanded="true" />
+            <element signature="e#3314#3942#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

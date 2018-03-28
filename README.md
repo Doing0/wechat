@@ -17,6 +17,7 @@ style: summer
 ### 服务器端
 > 1. 任务是获取分享时需要的appid和签名等参数
 > 2. 大概流程:通过appid和appsecret->获取AccessToken->获取jsapi的ticket->再签名返回
+> 3. 开发前请在doing/wechat/config/WechatConfig.php 配置appid和appsecret
 
 写一个接口获取参数
 ```

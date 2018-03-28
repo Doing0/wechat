@@ -7,7 +7,6 @@
  */
 
 namespace wechat\auth;
-
 use extp\diy\ServiceException;
 use think\Cache;
 use wechat\config\WechatConfig;
@@ -116,7 +115,7 @@ class WxAuth {
     private function createTicket($access_token)
     {
         #生成Jsapi
-        $url = sprintf(config('wechat_public.get_jsapi_url'), $access_token);
+        $url = sprintf(WechatConfig::GET_JSAPI_TICKET_URL, $access_token);
         $res = json_decode(postCurl($url, 'GET'), true);
         #验证请求
         if (0 != $res['errcode'])
@@ -156,8 +155,10 @@ class WxAuth {
     private function updateAccessToken()
     {
         #生成
-        $url = sprintf(config('wechat_public.get_access_token_url'), $this->appid, $this->appsecret);
+        $url = sprintf( WechatConfig::GET_ACCESS_TOKEN_URL, $this->appid, $this->appsecret);
+
         $res = json_decode(postCurl($url, 'GET'), true);
+        if(is_null($res))  throw New ServiceException(['msg'=>'请检查您的配置的appid等参数是否正确']);
         //微信端错误 80002生成accesstoken错误
         if (array_key_exists('errmsg', $res)) throw New ServiceException(['msg' => "微信错误码【" . $res['errcode'] . "】" . $res['errmsg']]);
 
