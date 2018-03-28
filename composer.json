@@ -19,7 +19,7 @@
         }
     },
     "require": {
-        "doing/extp": "dev-master",
-        "doing/tool": "dev-master"
+        "doing/extp": "@dev",
+        "doing/tool": "@dev"
     }
 }
