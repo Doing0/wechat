@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd6e9434-551d-4a98-9238-5f069d765937" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/functions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -153,7 +151,7 @@
       <workItem from="1522244959662" duration="1441000" />
       <workItem from="1522287946216" duration="915000" />
       <workItem from="1522304304171" duration="1171000" />
-      <workItem from="1522307331405" duration="244000" />
+      <workItem from="1522307331405" duration="302000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1522217806862</created>
@@ -260,11 +258,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522305375484</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="算法给上">
+      <created>1522307589653</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1522307589653</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13894000" />
+    <option name="totallyTimeSpent" value="13952000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="501" width="1382" height="754" extended-state="6" />
@@ -308,7 +313,8 @@
     <MESSAGE value="异常使用tp框架的,返回数据考虑兼容非tp" />
     <MESSAGE value="减少所有的依赖(tool)" />
     <MESSAGE value="json返回" />
-    <option name="LAST_COMMIT_MESSAGE" value="json返回" />
+    <MESSAGE value="算法给上" />
+    <option name="LAST_COMMIT_MESSAGE" value="算法给上" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
