@@ -21,7 +21,7 @@ style: summer
 
 #### 写在接口之前 
 ```
-把doing/wechat/functions.php里面的函数getRandChar()和postCurl()复制粘贴到application/common.php里
+把doing/wechat/functions.php里面的函数getRandChar()和postCurl()复制粘贴到application/common.php里。复制完成后functions.php就完成了它的使命,您可以选择删除此文件
 ```
 
 #### 写一个接口获取参数(以json返回)

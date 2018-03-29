@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bd6e9434-551d-4a98-9238-5f069d765937" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,21 +17,21 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SECOND">
-              <first_editor relative-caret-position="148">
-                <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="111">
+                <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
                 <folding>
-                  <marker date="1522307529316" expanded="true" signature="1767:1879" ph="//..." />
-                  <marker date="1522307529316" expanded="true" signature="1934:2035" ph="//..." />
-                  <marker date="1522307529316" expanded="true" signature="2188:3705" ph="{&quot;type&quot;: 'GET'...}" />
-                  <marker date="1522307529316" expanded="true" signature="2324:3626" ph="{...}" />
-                  <marker date="1522307529316" expanded="true" signature="2348:2847" ph="{&quot;appId&quot;: res.appId...}" />
-                  <marker date="1522307529316" expanded="true" signature="2697:2815" ph="[...]" />
-                  <marker date="1522307529316" expanded="true" signature="2883:3614" ph="{...}" />
-                  <marker date="1522307529316" expanded="true" signature="2947:3396" ph="{&quot;title&quot;: title...}" />
-                  <marker date="1522307529316" expanded="true" signature="3292:3335" ph="{...}" />
-                  <marker date="1522307529316" expanded="true" signature="3451:3598" ph="{&quot;title&quot;: title...}" />
-                  <marker date="1522307529316" expanded="true" signature="3658:3699" ph="{...}" />
+                  <marker date="1522307753641" expanded="true" signature="1805:1917" ph="//..." />
+                  <marker date="1522307753641" expanded="true" signature="1972:2073" ph="//..." />
+                  <marker date="1522307753641" expanded="true" signature="2226:3743" ph="{&quot;type&quot;: 'GET'...}" />
+                  <marker date="1522307753641" expanded="true" signature="2362:3664" ph="{...}" />
+                  <marker date="1522307753641" expanded="true" signature="2386:2885" ph="{&quot;appId&quot;: res.appId...}" />
+                  <marker date="1522307753641" expanded="true" signature="2735:2853" ph="[...]" />
+                  <marker date="1522307753641" expanded="true" signature="2921:3652" ph="{...}" />
+                  <marker date="1522307753641" expanded="true" signature="2985:3434" ph="{&quot;title&quot;: title...}" />
+                  <marker date="1522307753641" expanded="true" signature="3330:3373" ph="{...}" />
+                  <marker date="1522307753641" expanded="true" signature="3489:3636" ph="{&quot;title&quot;: title...}" />
+                  <marker date="1522307753641" expanded="true" signature="3696:3737" ph="{...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -151,7 +152,7 @@
       <workItem from="1522244959662" duration="1441000" />
       <workItem from="1522287946216" duration="915000" />
       <workItem from="1522304304171" duration="1171000" />
-      <workItem from="1522307331405" duration="302000" />
+      <workItem from="1522307331405" duration="436000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1522217806862</created>
@@ -265,16 +266,24 @@
       <option name="project" value="LOCAL" />
       <updated>1522307589653</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="算法给上">
+      <created>1522307642879</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1522307642879</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13952000" />
+    <option name="totallyTimeSpent" value="14086000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="501" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1749634" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1749634" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985073" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -375,21 +384,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="148">
-            <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="111">
+            <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
             <folding>
-              <marker date="1522307529316" expanded="true" signature="1767:1879" ph="//..." />
-              <marker date="1522307529316" expanded="true" signature="1934:2035" ph="//..." />
-              <marker date="1522307529316" expanded="true" signature="2188:3705" ph="{&quot;type&quot;: 'GET'...}" />
-              <marker date="1522307529316" expanded="true" signature="2324:3626" ph="{...}" />
-              <marker date="1522307529316" expanded="true" signature="2348:2847" ph="{&quot;appId&quot;: res.appId...}" />
-              <marker date="1522307529316" expanded="true" signature="2697:2815" ph="[...]" />
-              <marker date="1522307529316" expanded="true" signature="2883:3614" ph="{...}" />
-              <marker date="1522307529316" expanded="true" signature="2947:3396" ph="{&quot;title&quot;: title...}" />
-              <marker date="1522307529316" expanded="true" signature="3292:3335" ph="{...}" />
-              <marker date="1522307529316" expanded="true" signature="3451:3598" ph="{&quot;title&quot;: title...}" />
-              <marker date="1522307529316" expanded="true" signature="3658:3699" ph="{...}" />
+              <marker date="1522307753641" expanded="true" signature="1805:1917" ph="//..." />
+              <marker date="1522307753641" expanded="true" signature="1972:2073" ph="//..." />
+              <marker date="1522307753641" expanded="true" signature="2226:3743" ph="{&quot;type&quot;: 'GET'...}" />
+              <marker date="1522307753641" expanded="true" signature="2362:3664" ph="{...}" />
+              <marker date="1522307753641" expanded="true" signature="2386:2885" ph="{&quot;appId&quot;: res.appId...}" />
+              <marker date="1522307753641" expanded="true" signature="2735:2853" ph="[...]" />
+              <marker date="1522307753641" expanded="true" signature="2921:3652" ph="{...}" />
+              <marker date="1522307753641" expanded="true" signature="2985:3434" ph="{&quot;title&quot;: title...}" />
+              <marker date="1522307753641" expanded="true" signature="3330:3373" ph="{...}" />
+              <marker date="1522307753641" expanded="true" signature="3489:3636" ph="{&quot;title&quot;: title...}" />
+              <marker date="1522307753641" expanded="true" signature="3696:3737" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />
