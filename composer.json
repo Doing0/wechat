@@ -18,7 +18,5 @@
             "wechat\\wxpublic\\": "src/public"
         }
     },
-    "require": {
-        "doing/tool": "1.0.*"
-    }
+    "require": {}
 }

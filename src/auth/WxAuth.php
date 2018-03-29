@@ -120,7 +120,8 @@ class WxAuth {
         #验证请求
         if (0 != $res['errcode'])
         {
-            throw New \Exception($this->makeWxErrorString($res));
+            $exp['msg'] = '请检查您的配置的appid等参数是否正确';
+            exception($this->makeWxErrorString($res),600);
         }
         return $res['ticket'];
     }//pf
