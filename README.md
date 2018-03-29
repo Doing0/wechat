@@ -106,7 +106,7 @@ function postCurl($url = '', $type = "POST", $data = '', $header = false)
 
 ```
 
-#### 写一个接口获取参数
+#### 写一个接口获取参数(以json返回)
 ```
 public function info()
 {
@@ -118,7 +118,7 @@ public function info()
     //类的顶上一定保证use wechat\auth\WxAuth;
   try
   {
-        return WxAuth::instance()->getInfo($fullurl);
+        return json(WxAuth::instance()->getInfo($fullurl));
     }
     catch (\Exception $e)
     {
