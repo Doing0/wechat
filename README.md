@@ -6,7 +6,7 @@ style: summer
 > 1. 此composer包主要是集成关于微信的一些常用开发如：`微信公众号二次开发`，`微信支付`，`微信手机web的分享`等。由于包含众多功能现只上传了`微信手机web的分享`。后期会持续跟进和更新。
 > 2. 您在用此包时已默认您已会并成功配置了相关公众号信息且会使用composer
 > 3. 安装命令`composer require doing/wechat 版本号`
-> 4. 此包只能集成于ThinkPHP5里面：原因是使用了它的缓存机制，如果想使用于其他框架也很简单，只需要把缓存做一个更换处理即可(主要是编程思想)
+> 4. 此包只能集成于ThinkPHP5里面：原因是使用了它的缓存机制和异常处理机制，如果想使用于其他框架也很简单，只需要把缓存机制和异常机制做一个更换处理即可(主要是编程思想)
 
 ## 微信手机web分享(发送给朋友，朋友圈等)
 ### 配置公众号
@@ -23,30 +23,48 @@ style: summer
 ```
 public function info()
 {
-     try
-     {
-         #获取转义的ur并反转义
-         //客户端传递过来的参数fullurl一定是要通过js的encodeURIComponent转义了的
-         $fullurl = urldecode(input('fullurl'));
-         #获取权限信息(直接调用包内方法即可)：
-         //类的顶上一定保证use wechat\auth\WxAuth;
-         return WxAuth::instance()->getInfo($fullurl);
-     }
-     catch (\Exception $e)
-     {
-        //json方法是Tp5框架的,第一个参数是错误信息,第二个参数是http的状态码
-        //客户端接受异常如果是ajax请求就应该在error的回掉函数里获取
-         return json($e->getMessage(),600);
-     }//-try
+    #说明
+    // 在tp5框架全局配置文件的config.php查下全局返回模式参数是否是json如果不是的话先转成json再return
+    //总之返回给客户端建议用json格式方便后续操作
+    //'default_ajax_return'    => 'json',
+    //用json_encode转json时一定给第二个参数,否则中文乱码
+    //json_encode($exp,JSON_UNESCAPED_UNICODE);   #获取转义的ur并反转义
+    //客户端传递过来的参数fullurl一定是要通过js的encodeURIComponent转义了的
+
+    $fullurl = urldecode(input('fullurl'));
+    #获取权限信息(直接调用包内方法即可)：
+    //类的顶上一定保证use wechat\auth\WxAuth;
+  try
+  {
+        return WxAuth::instance()->getInfo($fullurl);
+    }
+    catch (\Exception $e)
+    {
+        $exp['msg'] = $e->getMessage();
+        $exp['code'] = $e->getCode();
+        #TP5的返回方式 异常都在客户端的error回掉函数内处理
+        return json($exp, $e->getCode());
+        #非tp5的php都兼容的返回模式
+        //header("status: ".$e->getCode()." wechat error");
+        //return $exp;
+  }//-try
 }//pf
 ```
-返回的数据格式如下(满足客户端调用微信jssdk时需要的数据结构)
+返回成功的数据格式如下(满足客户端调用微信jssdk时需要的数据结构)
 ```
 {
    appId: 'you appId',// 公众号的唯一标识
    timestamp:'12345678',// 生成签名的时间戳
    nonceStr: '12345678',// 生成签名的随机串
    signature: '12345678'// 签名
+}
+```
+返回异常的数据格式如下(http状态码600在header体现)
+```
+{
+
+   "msg": "微信错误码【40164】invalid ip 118.112.58.58, not in whitelist hint: [wgirhA04751512]",
+   "code": 600
 }
 ```
 

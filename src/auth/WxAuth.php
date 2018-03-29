@@ -157,11 +157,15 @@ class WxAuth {
         $url = sprintf(WechatConfig::GET_ACCESS_TOKEN_URL, $this->appid, $this->appsecret);
 
         $res = json_decode(postCurl($url, 'GET'), true);
-        if (is_null($res)) throw New \Exception('请检查您的配置的appid等参数是否正确');
+        if (is_null($res))
+        {
+            $exp['msg'] = '请检查您的配置的appid等参数是否正确';
+            exception($exp['msg'],600);
+        }
         //微信端错误 80002生成accesstoken错误
         if (array_key_exists('errmsg', $res))
         {
-            throw New \Exception($this->makeWxErrorString($res));
+            exception($this->makeWxErrorString($res),600);
         }
         #写缓存
         $access_token = $res['access_token'];
